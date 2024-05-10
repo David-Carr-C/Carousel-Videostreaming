@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  div(class="main")
+    section(class="container")
+      main
+        div(class="owl-carousel")
+          a(href="#")
+            img(src="https://picsum.photos/300/302", alt="previous")
+          a(href="#")
+            img(src="https://picsum.photos/300/303", alt="next")
+          a(href="#")
+            img(src="https://picsum.photos/300/304", alt="next")
+          a(href="#")
+            img(src="https://picsum.photos/300/305", alt="next")
+          a(href="#")
+            img(src="https://picsum.photos/300/306", alt="next")
+          a(href="#")
+            video(id="video", class="video-js vjs-default-skin vjs-big-play-centered", controls, preload="auto", width="640", height="268", data-setup='{}')
+              source(src="http://localhost:8080/live/stream.flv", type="video/x-flv")
+              source(src="http://localhost:8080/live/stream.m3u8", type="application/x-mpegURL")
+              
+        footer(class="controls")
+          button(class="previous") 
+            i(class="fas fa-chevron-left" id="previous")
+          button(class="next")
+            i(class="fas fa-chevron-right" id="next")
+
+
+
+  //- main
+  //-   video(id="video", class="video-js vjs-default-skin vjs-big-play-centered", controls, preload="auto", width="640", height="268", data-setup='{}')
+  //-     source(src="http://localhost:8080/live/stream.flv", type="video/x-flv")
+  //-     source(src="http://localhost:8080/live/stream.m3u8", type="application/x-mpegURL")
+  //-     p(class="vjs-no-js")
+  //-       To view this video please enable JavaScript, and consider upgrading to a
+  //-       web browser that
+  //-       a(href="https://videojs.com/html5-video-support/") supports HTML5 video
+    
+
+
+  script(src="javascripts/index.js")
